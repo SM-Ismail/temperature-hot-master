@@ -43,7 +43,7 @@
         });
         function weatherLoad(cityName){
             //calling api with api key and city name. It needs to be taken as input and passed in the function
-            fetch('http://api.openweathermap.org/data/2.5/weather?q='+cityName+'&units=metric&APPID=8bcddb7a04f2d048d78e58a1c1cfe55c')
+            fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityName+'&units=metric&APPID=8bcddb7a04f2d048d78e58a1c1cfe55c')
             .then(res => res.json())
             .then(data => {
                 console.log(data);
